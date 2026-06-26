@@ -1,0 +1,4 @@
+.streamlit/secrets.toml
+peppy-amplifier-*.json
+__pycache__/
+*.pyc
