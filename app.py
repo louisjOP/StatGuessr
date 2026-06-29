@@ -1,9 +1,11 @@
 import json
 import random
 import datetime as dt
+import base64
 from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 try:
     import gspread
@@ -27,6 +29,8 @@ st.set_page_config(
 
 APP_DIR = Path(__file__).parent
 DATA_FILE = APP_DIR / "stats.json"
+ASSETS_DIR = APP_DIR / "assets"
+ONEPOLL_LOGO = ASSETS_DIR / "onepoll_logo.png"
 ROUNDS_PER_GAME = 5
 LEADERBOARD_WORKSHEET_NAME = "Leaderboard"
 
@@ -38,114 +42,131 @@ st.markdown(
     """
     <style>
     .main .block-container {
-        padding-top: 1.2rem;
-        padding-bottom: 3rem;
-        max-width: 880px;
+        padding-top: 0.7rem;
+        padding-bottom: 1.5rem;
+        max-width: 820px;
     }
 
     .hero {
         text-align: center;
+        margin-bottom: 0.35rem;
+    }
+
+    .compact-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
         margin-bottom: 0.4rem;
     }
 
+    .onepoll-logo {
+        height: 42px;
+        width: auto;
+        object-fit: contain;
+    }
+
     .hero h1 {
-        margin-bottom: 0.15rem;
-        font-size: 2.4rem;
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.1;
     }
 
     .hero p {
         color: #6b7280;
-        margin-top: 0;
-        margin-bottom: 0.75rem;
+        margin-top: 0.15rem;
+        margin-bottom: 0;
+        font-size: 0.88rem;
     }
 
     .panel {
         background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
         border: 1px solid #ececec;
-        border-radius: 18px;
-        padding: 1rem 1rem 0.85rem 1rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        border-radius: 16px;
+        padding: 0.85rem 0.95rem;
+        margin-bottom: 0.65rem;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.04);
     }
 
     .question-text {
-        font-size: 1.18rem;
+        font-size: 1.04rem;
         font-weight: 750;
-        line-height: 1.55;
-        margin-bottom: 0.8rem;
+        line-height: 1.42;
+        margin-bottom: 0.55rem;
     }
 
     .guess-display {
         text-align: center;
-        font-size: 3.4rem;
+        font-size: 2.55rem;
         font-weight: 800;
         line-height: 1;
-        margin: 0.3rem 0 0.9rem 0;
+        margin: 0.2rem 0 0.45rem 0;
         color: #111827;
     }
 
     .guess-card {
         border: 1px solid #e5e7eb;
-        border-radius: 16px;
-        padding: 1rem;
+        border-radius: 14px;
+        padding: 0.65rem;
         background: #ffffff;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.55rem;
     }
 
     .result-card {
         background: #f8fafc;
         border: 1px solid #e5e7eb;
-        border-radius: 18px;
-        padding: 1rem 1.1rem;
-        margin-top: 0.75rem;
-        margin-bottom: 1rem;
+        border-radius: 16px;
+        padding: 0.8rem 0.95rem;
+        margin-top: 0.55rem;
+        margin-bottom: 0.65rem;
     }
 
     .leaderboard-row {
         background: #ffffff;
         border: 1px solid #e5e7eb;
         border-radius: 14px;
-        padding: 0.75rem 0.9rem;
-        margin-bottom: 0.55rem;
+        padding: 0.65rem 0.85rem;
+        margin-bottom: 0.45rem;
     }
 
     .mode-banner {
         background: linear-gradient(90deg, #eff6ff 0%, #f8fafc 100%);
         border: 1px solid #bfdbfe;
-        border-radius: 16px;
-        padding: 0.8rem 1rem;
-        margin-bottom: 0.75rem;
+        border-radius: 14px;
+        padding: 0.55rem 0.8rem;
+        margin-bottom: 0.55rem;
+        font-size: 0.9rem;
     }
 
     .mode-title {
         font-weight: 750;
         color: #1d4ed8;
-        margin-bottom: 0.15rem;
+        margin-bottom: 0.05rem;
     }
 
     .how-to-play {
         background: #f9fafb;
         border: 1px solid #e5e7eb;
-        border-radius: 14px;
-        padding: 0.75rem 0.9rem;
-        margin-bottom: 1rem;
+        border-radius: 12px;
+        padding: 0.55rem 0.75rem;
+        margin-bottom: 0.55rem;
         color: #374151;
-        font-size: 0.95rem;
+        font-size: 0.88rem;
     }
 
     .muted {
         color: #6b7280;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .pill {
         display: inline-block;
-        padding: 0.35rem 0.72rem;
+        padding: 0.28rem 0.58rem;
         border-radius: 999px;
-        font-size: 0.84rem;
+        font-size: 0.78rem;
         font-weight: 650;
-        margin-right: 0.4rem;
-        margin-bottom: 0.4rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.25rem;
         background: #f3f4f6;
         color: #111827;
     }
@@ -169,10 +190,29 @@ st.markdown(
         background: #f9fafb;
         border: 1px dashed #d1d5db;
         border-radius: 14px;
-        padding: 0.9rem 1rem;
+        padding: 0.8rem 0.9rem;
         white-space: pre-wrap;
         font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-        font-size: 0.92rem;
+        font-size: 0.9rem;
+    }
+
+    h2, h3 {
+        margin-top: 0.45rem !important;
+        margin-bottom: 0.45rem !important;
+    }
+
+    div[data-testid="stSlider"] {
+        padding-top: 0rem;
+        padding-bottom: 0.1rem;
+    }
+
+    div[data-testid="stProgress"] {
+        margin-bottom: 0.25rem;
+    }
+
+    .block-container hr {
+        margin-top: 0.85rem;
+        margin-bottom: 0.85rem;
     }
     </style>
     """,
@@ -220,6 +260,28 @@ def load_stats():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
+def image_to_base64(path):
+    if not path.exists():
+        return None
+
+    with open(path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode()
+    
+def request_scroll_to_top():
+    st.session_state.scroll_to_top = True
+
+
+def perform_scroll_to_top_if_needed():
+    if st.session_state.get("scroll_to_top", False):
+        components.html(
+            """
+            <script>
+            window.parent.scrollTo({ top: 0, behavior: "smooth" });
+            </script>
+            """,
+            height=0,
+        )
+        st.session_state.scroll_to_top = False
 
 def display_question(stat):
     original = stat.get("question", "")
@@ -570,6 +632,7 @@ def add_leaderboard_entry(player_name, score, max_score):
 
     load_leaderboard_entries_cached.clear()
 
+    request_scroll_to_top()
     return True, "Score added to today's leaderboard."
 
 def render_leaderboard(title="🏆 Today's leaderboard", limit=10):
@@ -644,6 +707,7 @@ def go_to_next_round():
     st.session_state.revealed = False
     st.session_state.last_guess = None
     st.session_state.last_score = 0
+    request_scroll_to_top()
 
     if st.session_state.round_index >= len(st.session_state.rounds):
         st.session_state.game_finished = True
@@ -700,6 +764,8 @@ if "leaderboard_notice" not in st.session_state:
 if "leaderboard_submitted" not in st.session_state:
     st.session_state.leaderboard_submitted = False
 
+if "scroll_to_top" not in st.session_state:
+    st.session_state.scroll_to_top = False
 
 # -----------------------------
 # Sidebar
@@ -793,15 +859,33 @@ start_new_game()
 # -----------------------------
 # Header
 # -----------------------------
-st.markdown(
-    """
-    <div class="hero">
-        <h1>📊 StatGuessr</h1>
-        <p>How well do you know Britain?</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+logo_b64 = image_to_base64(ONEPOLL_LOGO)
+
+if logo_b64:
+    st.markdown(
+        f"""
+        <div class="hero compact-hero">
+            <img src="data:image/png;base64,{logo_b64}" class="onepoll-logo">
+            <div>
+                <h1>📊 StatGuessr</h1>
+                <p>Powered by OnePoll-style survey stats</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+else:
+    st.markdown(
+        """
+        <div class="hero compact-hero">
+            <div>
+                <h1>📊 StatGuessr</h1>
+                <p>Powered by OnePoll-style survey stats</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 if st.session_state.mode == "Daily Challenge":
     banner_text = f"Daily Challenge • {st.session_state.selected_date.strftime('%A %d %B %Y')}"
@@ -975,7 +1059,7 @@ else:
     progress_pct = int((current_round - 1) / total_rounds * 100)
     st.progress(progress_pct, text=f"Round {current_round} of {total_rounds}")
 
-    st.markdown("## Today's stat")
+    st.markdown("### Today's stat")
 
     st.markdown(
         f"""
@@ -991,10 +1075,8 @@ else:
     )
 
     if not st.session_state.revealed:
-        st.markdown("### Your guess")
-
         guess = st.slider(
-            "What do you think the answer is?",
+            "Your guess",
             min_value=0,
             max_value=100,
             value=50,
@@ -1015,8 +1097,6 @@ else:
         if st.button("Submit guess", type="primary", use_container_width=True):
             submit_guess(stat, guess)
             st.rerun()
-
-        st.caption("Pick a percentage from 0% to 100%.")
 
     else:
         actual = stat["answer"]
