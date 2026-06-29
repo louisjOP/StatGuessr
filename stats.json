@@ -1,264 +1,407 @@
 [
-    {
-        "id": "stat_001",
-        "question": "What percentage of UK adults celebrate New Year’s Eve?",
-        "answer": 75,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_002",
-        "question": "What percentage of UK adults typically stay in and watch TV on New Year’s Eve?",
-        "answer": 45,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_003",
-        "question": "What percentage of UK adults planned to stay in on New Year’s Eve?",
-        "answer": 50,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_004",
-        "question": "What percentage of UK adults say New Year’s Eve is the most overrated night of the year?",
-        "answer": 59,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_005",
-        "question": "What percentage of UK adults think New Year’s Eve food and drink price increases are unfair?",
-        "answer": 66,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_006",
-        "question": "What percentage of UK adults say they enjoy New Year’s Eve at least a little?",
-        "answer": 64,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_007",
-        "question": "What percentage of UK adults say they enjoyed New Year’s Eve more when they were younger?",
-        "answer": 44,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_008",
-        "question": "What percentage of UK adults are more likely to host or attend a house party than go to a bar or club on New Year’s Eve?",
-        "answer": 41,
-        "category": "New Year",
-        "source_file": "AC H 1212 P - Hanover Comms - Pizza Hut - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-
-    {
-        "id": "stat_009",
-        "question": "What percentage of UK adults say they would keep a big lottery win secret?",
-        "answer": 46,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_010",
-        "question": "What percentage of UK adults say they would tell someone else about a big lottery win?",
-        "answer": 40,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_011",
-        "question": "What percentage of UK adults would feel uncomfortable talking about a big lottery win?",
-        "answer": 54,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_012",
-        "question": "What percentage of UK adults think a lottery win would show in subtle signs?",
-        "answer": 63,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_013",
-        "question": "What percentage of UK adults think small home upgrades might reveal a secret lottery win?",
-        "answer": 34,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_014",
-        "question": "What percentage of UK adults say they would share lottery winnings but not say how much they won?",
-        "answer": 45,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_015",
-        "question": "What percentage of UK adults say they would worry about being taken advantage of if people knew they had won the lottery?",
-        "answer": 74,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_016",
-        "question": "What percentage of UK adults say their biggest concern after winning the lottery would be being asked for money or loans?",
-        "answer": 53,
-        "category": "Lottery",
-        "source_file": "CM F 0202 QN - Front Door Comms - Quitting Number - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-
-    {
-        "id": "stat_017",
-        "question": "What percentage of UK adults say their primary news source is TV channels?",
-        "answer": 34,
-        "category": "News / Media",
-        "source_file": "LJ OP 2702 CAM - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_018",
-        "question": "What percentage of UK adults say they find BBC News trustworthy?",
-        "answer": 69,
-        "category": "News / Media",
-        "source_file": "LJ OP 2702 CAM - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_019",
-        "question": "What percentage of UK adults say they find TikTok untrustworthy as a news or information source?",
-        "answer": 60,
-        "category": "News / Media",
-        "source_file": "LJ OP 2702 CAM - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_020",
-        "question": "What percentage of UK adults say they have been impacted by the cost-of-living crisis?",
-        "answer": 73,
-        "category": "Money",
-        "source_file": "LJ OP 2702 CAM - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-
-    {
-        "id": "stat_021",
-        "question": "What percentage of UK adults say they throw away no plastic bathroom packaging in a typical month?",
-        "answer": 32,
-        "category": "Environment",
-        "source_file": "AD E 0106 F - Emerge PR - Fussy - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_022",
-        "question": "What percentage of UK adults say toothpaste tubes are the bathroom item they most commonly throw away?",
-        "answer": 55,
-        "category": "Environment",
-        "source_file": "AD E 0106 F - Emerge PR - Fussy - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_023",
-        "question": "What percentage of UK adults are aware that bathroom products can come in refillable or reusable alternatives?",
-        "answer": 64,
-        "category": "Environment",
-        "source_file": "AD E 0106 F - Emerge PR - Fussy - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_024",
-        "question": "What percentage of UK adults say lower cost would encourage them to switch to refillable bathroom products?",
-        "answer": 62,
-        "category": "Environment",
-        "source_file": "AD E 0106 F - Emerge PR - Fussy - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-
-    {
-        "id": "stat_025",
-        "question": "What percentage of UK parents with children aged 3–16 who subscribe to a streaming service say they always check age ratings?",
-        "answer": 44,
-        "category": "Streaming / Family",
-        "source_file": "RB B 1009 FC - BBFC - Film classification survey - Results.xlsx",
-        "base_note": "UK parents of 3-16 year olds who subscribe to a streaming service, base n=2000"
-    },
-    {
-        "id": "stat_026",
-        "question": "What percentage of those parents recognised the age rating symbols shown to them?",
-        "answer": 90,
-        "category": "Streaming / Family",
-        "source_file": "RB B 1009 FC - BBFC - Film classification survey - Results.xlsx",
-        "base_note": "UK parents of 3-16 year olds who subscribe to a streaming service, base n=2000"
-    },
-
-    {
-        "id": "stat_027",
-        "question": "What percentage of UK adults say they never ride a bike for any reason?",
-        "answer": 47,
-        "category": "Cycling / E-bikes",
-        "source_file": "RB B 0303 BI - Energy of things - Attitudes to e-bike battery safety - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_028",
-        "question": "What percentage of UK adults say they are interested in owning an e-bike?",
-        "answer": 37,
-        "category": "Cycling / E-bikes",
-        "source_file": "RB B 0303 BI - Energy of things - Attitudes to e-bike battery safety - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_029",
-        "question": "What percentage of UK adults say battery fire risk is what makes e-bikes seem unsafe?",
-        "answer": 48,
-        "category": "Cycling / E-bikes",
-        "source_file": "RB B 0303 BI - Energy of things - Attitudes to e-bike battery safety - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-    {
-        "id": "stat_030",
-        "question": "What percentage of UK adults were aware before the survey that e-bike batteries can start fires?",
-        "answer": 75,
-        "category": "Cycling / E-bikes",
-        "source_file": "RB B 0303 BI - Energy of things - Attitudes to e-bike battery safety - Results.xlsx",
-        "base_note": "UK adults, base n=2000"
-    },
-
-    {
-        "id": "stat_031",
-        "question": "What percentage of UK office workers say they would feel more positive about employer flexibility during major cultural or sporting events?",
-        "answer": 48,
-        "category": "Work / Sport",
-        "source_file": "AD F 1305 WC - Five not 10 - World Cup - Results.xlsx",
-        "base_note": "UK adults who work in an office, base n=2000"
-    },
-    {
-        "id": "stat_032",
-        "question": "What percentage of UK office workers say they would be more likely to go into the office if their employer showed a major match there?",
-        "answer": 42,
-        "category": "Work / Sport",
-        "source_file": "AD F 1305 WC - Five not 10 - World Cup - Results.xlsx",
-        "base_note": "UK adults who work in an office, base n=2000"
-    }
+  {
+    "id": "stat_001",
+    "question": "What percentage of UK adults are strongly hoping for cooler weather next week?",
+    "answer": 60,
+    "category": "Weather",
+    "difficulty": "Medium",
+    "source_file": "29.06.2026 - Cooler Weather - Results.xlsx",
+    "base_note": "UK adults, base n=1188"
+  },
+  {
+    "id": "stat_002",
+    "question": "What percentage of UK adults say they open windows to keep cool at home during hot weather?",
+    "answer": 64,
+    "category": "Home",
+    "difficulty": "Easy",
+    "source_file": "24.06.2026 - Staying Cool - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_003",
+    "question": "What percentage of UK adults say they use an electric fan to keep cool at home during hot weather?",
+    "answer": 60,
+    "category": "Home",
+    "difficulty": "Easy",
+    "source_file": "24.06.2026 - Staying Cool - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_004",
+    "question": "What percentage of UK adults say they sleep without a duvet to keep cool during hot weather?",
+    "answer": 46,
+    "category": "Health",
+    "difficulty": "Medium",
+    "source_file": "24.06.2026 - Staying Cool - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_005",
+    "question": "What percentage of UK adults say they stand in front of the open fridge to keep cool during hot weather?",
+    "answer": 4,
+    "category": "Home",
+    "difficulty": "Hard",
+    "source_file": "24.06.2026 - Staying Cool - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_006",
+    "question": "What percentage of UK adults say they put a wet t-shirt on before bed to keep cool during hot weather?",
+    "answer": 2,
+    "category": "Health",
+    "difficulty": "Hard",
+    "source_file": "24.06.2026 - Staying Cool - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_007",
+    "question": "What percentage of UK adults say having a calm and quiet space matters most when staying at a city hotel for a short trip?",
+    "answer": 50,
+    "category": "Travel",
+    "difficulty": "Medium",
+    "source_file": "25.06.2026 - Hub Poll - Results.xlsx",
+    "base_note": "UK adults, base n=892"
+  },
+  {
+    "id": "stat_008",
+    "question": "What percentage of UK adults say free Wi-Fi matters most when staying at a city hotel for a short trip?",
+    "answer": 30,
+    "category": "Travel",
+    "difficulty": "Medium",
+    "source_file": "25.06.2026 - Hub Poll - Results.xlsx",
+    "base_note": "UK adults, base n=892"
+  },
+  {
+    "id": "stat_009",
+    "question": "What percentage of UK adults think the bill should usually be split equally on a first date?",
+    "answer": 43,
+    "category": "Relationships",
+    "difficulty": "Medium",
+    "source_file": "13.04.2026 - First Date - Results.xlsx",
+    "base_note": "UK adults, base n=780"
+  },
+  {
+    "id": "stat_010",
+    "question": "What percentage of UK adults think the man should usually pay the whole bill on a first date?",
+    "answer": 27,
+    "category": "Relationships",
+    "difficulty": "Medium",
+    "source_file": "13.04.2026 - First Date - Results.xlsx",
+    "base_note": "UK adults, base n=780"
+  },
+  {
+    "id": "stat_011",
+    "question": "What percentage of UK adults say they support a social media ban for under-16s?",
+    "answer": 75,
+    "category": "Social Media",
+    "difficulty": "Easy",
+    "source_file": "16.06.2026 - Social Media Ban - Results.xlsx",
+    "base_note": "UK adults, base n=873"
+  },
+  {
+    "id": "stat_012",
+    "question": "What percentage of UK adults think England will win the upcoming World Cup?",
+    "answer": 7,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "09.06.2026 - England chances - Results.xlsx",
+    "base_note": "UK adults, base n=763"
+  },
+  {
+    "id": "stat_013",
+    "question": "What percentage of UK adults think England will reach the quarter-final of the upcoming World Cup?",
+    "answer": 29,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "source_file": "09.06.2026 - England chances - Results.xlsx",
+    "base_note": "UK adults, base n=763"
+  },
+  {
+    "id": "stat_014",
+    "question": "What percentage of UK adults are not sure how far England will go in the upcoming World Cup?",
+    "answer": 23,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "source_file": "09.06.2026 - England chances - Results.xlsx",
+    "base_note": "UK adults, base n=763"
+  },
+  {
+    "id": "stat_015",
+    "question": "What percentage of UK adults would most like to win a luxury weekend getaway for two?",
+    "answer": 56,
+    "category": "Holidays",
+    "difficulty": "Easy",
+    "source_file": "20.03.2026 - Instant Win - Final Results.xlsx",
+    "base_note": "UK adults, base n=836"
+  },
+  {
+    "id": "stat_016",
+    "question": "What percentage of UK adults would most like to win a helicopter tour of London?",
+    "answer": 11,
+    "category": "Travel",
+    "difficulty": "Hard",
+    "source_file": "20.03.2026 - Instant Win - Final Results.xlsx",
+    "base_note": "UK adults, base n=836"
+  },
+  {
+    "id": "stat_017",
+    "question": "What percentage of UK adults would most like to win a guided skydive?",
+    "answer": 6,
+    "category": "Travel",
+    "difficulty": "Hard",
+    "source_file": "20.03.2026 - Instant Win - Final Results.xlsx",
+    "base_note": "UK adults, base n=836"
+  },
+  {
+    "id": "stat_018",
+    "question": "What percentage of UK adults think plant-based milks should be called something else?",
+    "answer": 44,
+    "category": "Food",
+    "difficulty": "Medium",
+    "source_file": "18.02.2026 - Oatly - Results.xlsx",
+    "base_note": "UK adults, base n=647"
+  },
+  {
+    "id": "stat_019",
+    "question": "What percentage of UK adults say they would prefer a private proposal?",
+    "answer": 68,
+    "category": "Relationships",
+    "difficulty": "Easy",
+    "source_file": "17.02.2026 - Proposals - Results.xlsx",
+    "base_note": "UK adults, base n=655"
+  },
+  {
+    "id": "stat_020",
+    "question": "What percentage of UK adults say hot and sunny is their favourite type of UK weather?",
+    "answer": 48,
+    "category": "Weather",
+    "difficulty": "Easy",
+    "source_file": "20.02.2026 - Weather - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_021",
+    "question": "What percentage of UK adults say crisp and frosty is their favourite type of UK weather?",
+    "answer": 10,
+    "category": "Weather",
+    "difficulty": "Hard",
+    "source_file": "20.02.2026 - Weather - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_022",
+    "question": "What percentage of UK adults say snow is their favourite type of UK weather?",
+    "answer": 4,
+    "category": "Weather",
+    "difficulty": "Hard",
+    "source_file": "20.02.2026 - Weather - Results.xlsx",
+    "base_note": "UK adults, base n=819"
+  },
+  {
+    "id": "stat_023",
+    "question": "What percentage of UK adults say 20-21°C is the ideal office temperature?",
+    "answer": 35,
+    "category": "Work",
+    "difficulty": "Medium",
+    "source_file": "10.06.2026 - Office Temperature - Results.xlsx",
+    "base_note": "UK adults, base n=764"
+  },
+  {
+    "id": "stat_024",
+    "question": "What percentage of UK adults say 18-19°C is the ideal office temperature?",
+    "answer": 27,
+    "category": "Work",
+    "difficulty": "Medium",
+    "source_file": "10.06.2026 - Office Temperature - Results.xlsx",
+    "base_note": "UK adults, base n=764"
+  },
+  {
+    "id": "stat_025",
+    "question": "What percentage of UK adults say they plan to relax at home over the UK bank holiday weekend?",
+    "answer": 37,
+    "category": "Holidays",
+    "difficulty": "Medium",
+    "source_file": "21.05.2026 - Bank Holiday Weekend - Results.xlsx",
+    "base_note": "UK adults, base n=682"
+  },
+  {
+    "id": "stat_026",
+    "question": "What percentage of UK adults say they plan to spend time outdoors over the UK bank holiday weekend?",
+    "answer": 33,
+    "category": "Holidays",
+    "difficulty": "Medium",
+    "source_file": "21.05.2026 - Bank Holiday Weekend - Results.xlsx",
+    "base_note": "UK adults, base n=682"
+  },
+  {
+    "id": "stat_027",
+    "question": "What percentage of UK adults say they plan to have a BBQ over the UK bank holiday weekend?",
+    "answer": 14,
+    "category": "Food",
+    "difficulty": "Hard",
+    "source_file": "21.05.2026 - Bank Holiday Weekend - Results.xlsx",
+    "base_note": "UK adults, base n=682"
+  },
+  {
+    "id": "stat_028",
+    "question": "What percentage of UK adults say they have no plans for the UK bank holiday weekend?",
+    "answer": 13,
+    "category": "Holidays",
+    "difficulty": "Hard",
+    "source_file": "21.05.2026 - Bank Holiday Weekend - Results.xlsx",
+    "base_note": "UK adults, base n=682"
+  },
+  {
+    "id": "stat_029",
+    "question": "What percentage of UK adults are confident they will have enough pension income for retirement?",
+    "answer": 48,
+    "category": "Money",
+    "difficulty": "Medium",
+    "source_file": "04.06.2026 - Pension Pot - Results.xlsx",
+    "base_note": "UK adults, base n=778"
+  },
+  {
+    "id": "stat_030",
+    "question": "What percentage of UK adults say they have typically been getting three to four hours of sleep on a weekday night during the heatwave?",
+    "answer": 23,
+    "category": "Health",
+    "difficulty": "Medium",
+    "source_file": "26.06.2026 - Sleeping in the Heatwave - Results.xlsx",
+    "base_note": "UK adults, base n=844"
+  },
+  {
+    "id": "stat_031",
+    "question": "What percentage of UK adults say they have typically been getting five to six hours of sleep on a weekday night during the heatwave?",
+    "answer": 50,
+    "category": "Health",
+    "difficulty": "Medium",
+    "source_file": "26.06.2026 - Sleeping in the Heatwave - Results.xlsx",
+    "base_note": "UK adults, base n=844"
+  },
+  {
+    "id": "stat_032",
+    "question": "What percentage of UK adults say they would not change the locks after buying a new home?",
+    "answer": 16,
+    "category": "Home",
+    "difficulty": "Medium",
+    "source_file": "26.03.2026 - Lock change - Results.xlsx",
+    "base_note": "UK adults, base n=670"
+  },
+  {
+    "id": "stat_033",
+    "question": "What percentage of UK adults say they would change the locks on the day they got the keys to a new home?",
+    "answer": 24,
+    "category": "Home",
+    "difficulty": "Medium",
+    "source_file": "26.03.2026 - Lock change - Results.xlsx",
+    "base_note": "UK adults, base n=670"
+  },
+  {
+    "id": "stat_034",
+    "question": "What percentage of UK adults would prefer to time travel to the past?",
+    "answer": 54,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "10.02.2026 - Time Travel - Results.xlsx",
+    "base_note": "UK adults, base n=482"
+  },
+  {
+    "id": "stat_035",
+    "question": "What percentage of UK adults say they recycle or reduce waste to be more environmentally conscious?",
+    "answer": 87,
+    "category": "Home",
+    "difficulty": "Easy",
+    "source_file": "24.04.2026 - Environmentally Conscious Habits - Results.xlsx",
+    "base_note": "UK adults, base n=706"
+  },
+  {
+    "id": "stat_036",
+    "question": "What percentage of UK adults say they save energy at home to be more environmentally conscious?",
+    "answer": 74,
+    "category": "Home",
+    "difficulty": "Easy",
+    "source_file": "24.04.2026 - Environmentally Conscious Habits - Results.xlsx",
+    "base_note": "UK adults, base n=706"
+  },
+  {
+    "id": "stat_037",
+    "question": "What percentage of UK adults say they walk, cycle or use public transport instead of driving to be more environmentally conscious?",
+    "answer": 43,
+    "category": "Travel",
+    "difficulty": "Medium",
+    "source_file": "24.04.2026 - Environmentally Conscious Habits - Results.xlsx",
+    "base_note": "UK adults, base n=706"
+  },
+  {
+    "id": "stat_038",
+    "question": "What percentage of UK adults say they avoid single-use plastics to be more environmentally conscious?",
+    "answer": 40,
+    "category": "Shopping",
+    "difficulty": "Medium",
+    "source_file": "24.04.2026 - Environmentally Conscious Habits - Results.xlsx",
+    "base_note": "UK adults, base n=706"
+  },
+  {
+    "id": "stat_039",
+    "question": "What percentage of UK adults would press the blue button in a thought experiment where everyone survives if more than half choose blue?",
+    "answer": 66,
+    "category": "Britain",
+    "difficulty": "Hard",
+    "source_file": "08.05.2026 - Red vs Blue - Results.xlsx",
+    "base_note": "UK adults, base n=619"
+  },
+  {
+    "id": "stat_040",
+    "question": "What percentage of UK adults say Paul McCartney is their favourite Beatle?",
+    "answer": 23,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "27.04.2026 - Beatles Member - Results.xlsx",
+    "base_note": "UK adults, base n=921"
+  },
+  {
+    "id": "stat_041",
+    "question": "What percentage of UK adults say no particular Beatle is their favourite?",
+    "answer": 39,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "27.04.2026 - Beatles Member - Results.xlsx",
+    "base_note": "UK adults, base n=921"
+  },
+  {
+    "id": "stat_042",
+    "question": "What percentage of UK adults say they would not appear on Naked Attraction at any price?",
+    "answer": 53,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "05.06.2026 - Naked Attraction - Results.xlsx",
+    "base_note": "UK adults, base n=684"
+  },
+  {
+    "id": "stat_043",
+    "question": "What percentage of UK adults say they did not attend or watch the Arsenal parade?",
+    "answer": 72,
+    "category": "Entertainment",
+    "difficulty": "Hard",
+    "source_file": "02.06.2026 - Arsenal Parade - Results.xlsx",
+    "base_note": "UK adults, base n=770"
+  },
+  {
+    "id": "stat_044",
+    "question": "What percentage of UK adults say they plan to vote in their local elections?",
+    "answer": 74,
+    "category": "Britain",
+    "difficulty": "Medium",
+    "source_file": "14.04.2026 - Local Election - Results.xlsx",
+    "base_note": "UK adults, base n=742"
+  },
+  {
+    "id": "stat_045",
+    "question": "What percentage of UK adults say they are not aware at all of the online manosphere?",
+    "answer": 32,
+    "category": "Social Media",
+    "difficulty": "Hard",
+    "source_file": "16.03.2026 - Manosphere - Results.xlsx",
+    "base_note": "UK adults, base n=818"
+  }
 ]
